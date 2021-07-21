@@ -1,3 +1,5 @@
+//calculate pay consider the over pay if they work more than 40 hours
+
 #include<stdio.h>
 #pragma warning (disable:4996)
 
