@@ -1,3 +1,6 @@
+// escape well project
+//day : climb up 50cm, night slide 20cm -> count how much they need to escape well
+
 #include<stdio.h>
 #pragma warning (disable:4996)
 #define UPMOVE 50
