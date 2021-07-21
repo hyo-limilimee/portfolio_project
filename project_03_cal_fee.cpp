@@ -1,3 +1,5 @@
+//calculate entrance fee (consider age and discont if they are more thn 5 people -> 10percent)
+
 #include<stdio.h>
 #pragma warning(disable:4996)
 
