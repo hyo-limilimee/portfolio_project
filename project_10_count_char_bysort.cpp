@@ -1,3 +1,5 @@
+//classify string to letter, number, space&tab&enter, etc
+
 #include<stdio.h>
 
 int main()
