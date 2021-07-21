@@ -1,3 +1,5 @@
+// rock scissor paper game with computer
+
 #include<stdlib.h>
 #include<time.h>
 #include<stdio.h>
