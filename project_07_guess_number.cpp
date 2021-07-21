@@ -1,3 +1,6 @@
+//guess random number
+//count how much time they try
+
 #include<stdlib.h>
 #include<time.h>
 #include<stdio.h>
