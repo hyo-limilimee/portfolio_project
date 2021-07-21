@@ -32,7 +32,7 @@ int input()
 	int result, num, in_height;
 	while (1)
 	{
-		printf("*¿ì¹°ÀÇ ±íÀÌ¸¦ ÀÔ·ÂÇÏ½Ã¿À(cm´ÜÀ§) : ");
+		printf("*ìš°ë¬¼ì˜ ê¹Šì´ë¥¼ ì…ë ¥í•˜ì‹œì˜¤(cmë‹¨ìœ„) : ");
 		result = scanf("%d", &in_height);
 
 		while (getchar() != '\n')
@@ -72,7 +72,7 @@ int calc(int height_cm)
 
 void output(double height, int count)
 {
-	printf("%.2lf¹ÌÅÍ ±íÀÌÀÇ ¿ì¹°À» Å»ÃâÇÏ±â À§ÇØ¼­´Â %dÀÏÀÌ °É¸³´Ï´Ù.\n", height, count);
+	printf("%.2lfë¯¸í„° ê¹Šì´ì˜ ìš°ë¬¼ì„ íƒˆì¶œí•˜ê¸° ìœ„í•´ì„œëŠ” %dì¼ì´ ê±¸ë¦½ë‹ˆë‹¤.\n", height, count);
 
 	return;
 }
