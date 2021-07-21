@@ -26,7 +26,7 @@ int input()
 {
 	int in_year;
 
-	printf("³âµµ¸¦ ÀÔ·ÂÇÏ½Ã¿À. : ");
+	printf("ë…„ë„ë¥¼ ì…ë ¥í•˜ì‹œì˜¤. : ");
 
 	scanf("%d", &in_year);
 
@@ -66,13 +66,13 @@ void output(int year, int a)
 
 	if (a == 0)
 	{
-		printf("%d³âÀº Æò³â(Common year)ÀÔ´Ï´Ù.\n", year);
+		printf("%dë…„ì€ í‰ë…„(Common year)ì…ë‹ˆë‹¤.\n", year);
 
 	}
 
 	else
 	{
-		printf("%d³âÀº À±³â(Leap year)ÀÔ´Ï´Ù.\n", year);
+		printf("%dë…„ì€ ìœ¤ë…„(Leap year)ì…ë‹ˆë‹¤.\n", year);
 
 	}
 
