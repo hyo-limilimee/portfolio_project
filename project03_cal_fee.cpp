@@ -58,7 +58,7 @@ int inputAge()
 {
 	int in_age;
 
-	printf("ÀÔÀå°´ÀÇ ³ªÀÌ¸¦ ÀÔ·ÂÇÏ½Ã¿À. : ");
+	printf("ì…ì¥ê°ì˜ ë‚˜ì´ë¥¼ ì…ë ¥í•˜ì‹œì˜¤. : ");
 	scanf("%d", &in_age);
 
 	return in_age;
@@ -69,7 +69,7 @@ int inputCount()
 {
 	int in_count;
 
-	printf("ÀÔÀå°´ÀÇ ¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À. : ");
+	printf("ì…ì¥ê°ì˜ ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤. : ");
 	scanf("%d", &in_count);
 
 	return in_count;
@@ -78,7 +78,7 @@ int inputCount()
 
 void output(int amount, int s_price, int pay)
 {
-	printf("ÀÔÀå·á => %d¿ø\nÇÒÀÎ±İ¾× => %d¿ø\n°áÁ¦±İ¾× => %d¿ø", amount, s_price, pay);
+	printf("ì…ì¥ë£Œ => %dì›\ní• ì¸ê¸ˆì•¡ => %dì›\nê²°ì œê¸ˆì•¡ => %dì›", amount, s_price, pay);
 
 	return;
 }
