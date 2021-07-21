@@ -1,4 +1,4 @@
-//calculate pay consider the over pay if they work more than 40 hours
+//calculate pay consider the over pay if they work more than 40 hours and tax is basically 15% but their pay over 100,000만원 25%
 
 #include<stdio.h>
 #pragma warning (disable:4996)
