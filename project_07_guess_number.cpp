@@ -21,7 +21,7 @@ int main()
 
 	count = output(r_num, user_num1);
 
-	printf("¿ì¿Í~ ¸Â¾Ò´ç~~~ ÃßÄ«ÃßÄ«~~ %d¹øÂ° ¸¸¿¡ ¸ÂÃß¼Ì½À´Ï´Ù.", count);
+	printf("ìš°ì™€~ ë§ì•˜ë‹¹~~~ ì¶”ì¹´ì¶”ì¹´~~ %dë²ˆì§¸ ë§Œì— ë§ì¶”ì…¨ìŠµë‹ˆë‹¤.", count);
 
 	return 0;
 }
@@ -39,7 +39,7 @@ int input()
 {
 
 	int user_num1;
-	printf("#¼ıÀÚ¸¦ ÀÔ·ÂÇÏ½Ã¿À : ");
+	printf("#ìˆ«ìë¥¼ ì…ë ¥í•˜ì‹œì˜¤ : ");
 	scanf("%d", &user_num1);
 
 	while (user_num1 < 1 || user_num1 > 100 || getchar() != '\n')
@@ -47,7 +47,7 @@ int input()
 
 		myflush();
 
-		printf("#¼ıÀÚ¸¦ ÀçÀÔ·ÂÇÏ½Ã¿À : ");
+		printf("#ìˆ«ìë¥¼ ì¬ì…ë ¥í•˜ì‹œì˜¤ : ");
 		scanf("%d", &user_num1);
 
 		if (user_num1 >= 1 && user_num1 <= 100)
@@ -79,7 +79,7 @@ int input()
 			else if (r_num < user_num1)
 			{
 
-				printf("%dº¸´Ù´Â Å©°í %dº¸´Ù´Â ÀÛ½À´Ï´Ù.\n", user_num2, user_num1);
+				printf("%dë³´ë‹¤ëŠ” í¬ê³  %dë³´ë‹¤ëŠ” ì‘ìŠµë‹ˆë‹¤.\n", user_num2, user_num1);
 
 				user_num3 = user_num1;
 
@@ -89,7 +89,7 @@ int input()
 
 			else
 			{
-				printf("%dº¸´Ù´Â Å©°í %dº¸´Ù´Â ÀÛ½À´Ï´Ù.\n", user_num1, user_num3);
+				printf("%dë³´ë‹¤ëŠ” í¬ê³  %dë³´ë‹¤ëŠ” ì‘ìŠµë‹ˆë‹¤.\n", user_num1, user_num3);
 
 				user_num2 = user_num1;
 
