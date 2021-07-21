@@ -11,7 +11,7 @@ int main()
 
     input(&start, &end, &gojip);
 
-    printf("°íÁı¼ö°¡ %dÀÎ ¼ıÀÚ Ãâ·Â\n", gojip);
+    printf("ê³ ì§‘ìˆ˜ê°€ %dì¸ ìˆ«ì ì¶œë ¥\n", gojip);
 
     int i, number, count;
     int gojip_sum = 0;
@@ -40,7 +40,7 @@ int main()
 
     }
 
-    printf("ÃÑ °³¼ö : %d°³\n", gojip_sum);
+    printf("ì´ ê°œìˆ˜ : %dê°œ\n", gojip_sum);
 
 
     return 0;
@@ -52,7 +52,7 @@ void input(int* s_number, int* e_number, int* g_number)
 {
     while (1)
     {
-        printf("½ÃÀÛ °ª(P1) : ");
+        printf("ì‹œì‘ ê°’(P1) : ");
         scanf("%d", s_number);
 
         if (*s_number <= 100 && getchar() == '\n')
@@ -70,7 +70,7 @@ void input(int* s_number, int* e_number, int* g_number)
 
     while (1)
     {
-        printf("³¡ °ª(P2) : ");
+        printf("ë ê°’(P2) : ");
         scanf("%d", e_number);
 
         if (*e_number <= 10000 && getchar() == '\n')
@@ -88,7 +88,7 @@ void input(int* s_number, int* e_number, int* g_number)
 
     while (1)
     {
-        printf("°íÁı¼ö(N) : ");
+        printf("ê³ ì§‘ìˆ˜(N) : ");
         scanf("%d", g_number);
 
         if (*g_number <= 10 && *g_number >= 1 && getchar() == '\n')
