@@ -1,3 +1,11 @@
+//apply number by law
+//if 77 -> 49(7*7) -> 36(4*9) ->18(3*6) -> 8(1*8) 
+//and its number is 4
+
+//calculate the number by this law until it get the number of range 1 between 9
+
+
+
 #include<stdio.h>
 #pragma warning (disable:4996)
 
