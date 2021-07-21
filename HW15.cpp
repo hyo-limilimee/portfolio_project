@@ -18,11 +18,11 @@ int main()
 
 
 }
-//¸ö¹«°Ô´Â Á¤¼ö·Î ÀÔ·Â ¹Ş°í Å°´Â ½Ç¼ö·Î ÀÔ·Â¹ŞÀ½
+//ëª¸ë¬´ê²ŒëŠ” ì •ìˆ˜ë¡œ ì…ë ¥ ë°›ê³  í‚¤ëŠ” ì‹¤ìˆ˜ë¡œ ì…ë ¥ë°›ìŒ
 int inputWeight()
 {
 	int in_weight;
-	printf("¸ö¹«°Ô¸¦ ÀÔ·ÂÇÏ¼¼¿ä(kg) : ");
+	printf("ëª¸ë¬´ê²Œë¥¼ ì…ë ¥í•˜ì„¸ìš”(kg) : ");
 	scanf("%d", &in_weight);
 
 	return in_weight;
@@ -32,7 +32,8 @@ double inputHeight()
 {
 	double in_height;
 
-	printf("Å°¸¦ ÀÔ·ÂÇÏ¼¼¿ä(m) : ");
+	printf("í‚¤ë¥¼ ì…ë ¥í•˜ì„¸ìš”(m) : ");
+	
 	scanf("%lf", &in_height);
 
 	return in_height;
@@ -55,32 +56,32 @@ double calcBMI()
 void output(double BMI)
 {
 	
-	printf("*BMI ¼öÄ¡¿¡ µû¸¥ ¼Ò°ßÇ¥\n");
+	printf("*BMI ìˆ˜ì¹˜ì— ë”°ë¥¸ ì†Œê²¬í‘œ\n");
 	
 	if (BMI < 18.5)
 	{
-		printf("´ç½ÅÀÇ BMI´Â %.1lfÀ¸·Î ÀúÃ¼ÁßÀÔ´Ï´Ù.", BMI);
+		printf("ë‹¹ì‹ ì˜ BMIëŠ” %.1lfìœ¼ë¡œ ì €ì²´ì¤‘ì…ë‹ˆë‹¤.", BMI);
 	}
 
 	else if (BMI < 25.0)
 	{
-		printf("´ç½ÅÀÇ BMI´Â %.1lfÀ¸·Î Á¤»óÃ¼ÁßÀÔ´Ï´Ù.", BMI);
+		printf("ë‹¹ì‹ ì˜ BMIëŠ” %.1lfìœ¼ë¡œ ì •ìƒì²´ì¤‘ì…ë‹ˆë‹¤.", BMI);
 	}
 
 	else if (BMI < 30.0)
 
 	{
-		printf("´ç½ÅÀÇ BMI´Â %.1lfÀ¸·Î °úÃ¼ÁßÀÔ´Ï´Ù.", BMI);
+		printf("ë‹¹ì‹ ì˜ BMIëŠ” %.1lfìœ¼ë¡œ ê³¼ì²´ì¤‘ì…ë‹ˆë‹¤.", BMI);
 	}
 
 	else if (BMI < 40.0)
 	{
-		printf("´ç½ÅÀÇ BMI´Â %.1lfÀ¸·Î ºñ¸¸ÀÔ´Ï´Ù.", BMI);
+		printf("ë‹¹ì‹ ì˜ BMIëŠ” %.1lfìœ¼ë¡œ ë¹„ë§Œì…ë‹ˆë‹¤.", BMI);
 	}
 
 	else
 	{
-		printf("´ç½ÅÀÇ BMI´Â %.1lfÀ¸·Î °íµµºñ¸¸ÀÔ´Ï´Ù.", BMI);
+		printf("ë‹¹ì‹ ì˜ BMIëŠ” %.1lfìœ¼ë¡œ ê³ ë„ë¹„ë§Œì…ë‹ˆë‹¤.", BMI);
 	}
 
 	return;
