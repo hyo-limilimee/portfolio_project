@@ -1,3 +1,5 @@
+//classify common year and leap year
+
 #include<stdio.h>
 #pragma warning (disable:4996)
 
