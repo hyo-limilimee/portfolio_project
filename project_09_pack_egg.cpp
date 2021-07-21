@@ -1,3 +1,5 @@
+//classify normal eggs and package
+
 #include<stdio.h>
 #pragma warning (disable:4996)
 
