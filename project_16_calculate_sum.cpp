@@ -8,7 +8,7 @@ int main()
 
 	for (count = 1; count <= 5;)
 	{
-		printf("0º¸´Ù Å«¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À(%d ¹øÂ°) : ", count);
+		printf("0ë³´ë‹¤ í°ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤(%d ë²ˆì§¸) : ", count);
 		scanf("%d", &number);
 
 		if (number > 0 && getchar() == '\n')
@@ -28,7 +28,7 @@ int main()
 
 	}
 	
-	printf("ÀÔ·ÂµÈ °ªÀÇ ÃÑ ÇÕ : %d", sum);
+	printf("ì…ë ¥ëœ ê°’ì˜ ì´ í•© : %d", sum);
 
 	return 0;
 
