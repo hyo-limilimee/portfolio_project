@@ -13,16 +13,16 @@ int main()
 
 	double fnum, dresult, N_d;
 
-	num = inputUInt("* ¾çÀÇ Á¤¼ö ¹ØÀ» ÀÔ·ÂÇÏ½Ã¿À : ");
-	N = inputUInt("* ¾çÀÇ ½ÂÀ» ÀÔ·ÂÇÏ½Ã¿À : ");
+	num = inputUInt("* ì–‘ì˜ ì •ìˆ˜ ë°‘ì„ ì…ë ¥í•˜ì‹œì˜¤ : ");
+	N = inputUInt("* ì–‘ì˜ ìŠ¹ì„ ì…ë ¥í•˜ì‹œì˜¤ : ");
 	uiresult = ipow(num, N);
-	printf("%dÀÇ %d½ÂÀº %dÀÔ´Ï´Ù.\n\n", num, N, uiresult);
+	printf("%dì˜ %dìŠ¹ì€ %dì…ë‹ˆë‹¤.\n\n", num, N, uiresult);
 
-	fnum = inputDouble("* ¾çÀÇ ½Ç¼ö ¹ØÀ» ÀÔ·ÂÇÏ½Ã¿À : ");
-	N = inputDouble("* ¾çÀÇ ½ÂÀ» ÀÔ·ÂÇÏ½Ã¿À : ");
+	fnum = inputDouble("* ì–‘ì˜ ì‹¤ìˆ˜ ë°‘ì„ ì…ë ¥í•˜ì‹œì˜¤ : ");
+	N = inputDouble("* ì–‘ì˜ ìŠ¹ì„ ì…ë ¥í•˜ì‹œì˜¤ : ");
 	dresult = fpow(fnum, N);
 	
-	printf("%.2lfÀÇ %d½ÂÀº %.3lfÀÔ´Ï´Ù.\n\n", fnum, N, dresult);
+	printf("%.2lfì˜ %dìŠ¹ì€ %.3lfì…ë‹ˆë‹¤.\n\n", fnum, N, dresult);
 	
 	return 0;
 }
