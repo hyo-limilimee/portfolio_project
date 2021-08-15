@@ -12,7 +12,7 @@ int main()
 	char in_menu = 'a';
 
 	int money = 0;
-	printf("* ÇöÀç ÀÜ¾×ÀÌ %d¿ø ÀÔ´Ï´Ù.\n\n", money);
+	printf("* í˜„ì¬ ì”ì•¡ì´ %dì› ì…ë‹ˆë‹¤.\n\n", money);
 
 	while (1)
 	{
@@ -49,7 +49,7 @@ int menu()
 
 	while (1)
 	{
-		printf("# ¸Ş´º¸¦ ¼±ÅÃÇÏ½Ã¿À(i-ÀÔ±İ, o-Ãâ±İ, q-Á¾·á) : ");
+		printf("# ë©”ë‰´ë¥¼ ì„ íƒí•˜ì‹œì˜¤(i-ì…ê¸ˆ, o-ì¶œê¸ˆ, q-ì¢…ë£Œ) : ");
 		scanf("%c", &a);
 
 		if (a == 'i' || a == 'o' || a == 'q')
@@ -61,7 +61,7 @@ int menu()
 
 		else
 		{
-			printf("* Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù.\n\n");
+			printf("* ì˜ëª» ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤.\n\n");
 			myflush();
 		}
 
@@ -91,7 +91,7 @@ int inputInt(const char* string)
 			myflush();
 		}
 
-		printf("* Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇÏ½Ê½Ã¿À : ");
+		printf("* ì˜ëª» ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•˜ì‹­ì‹œì˜¤ : ");
 
 	}
 	return a;
@@ -100,21 +100,21 @@ int inputInt(const char* string)
 void deposit(int* m)
 {
 	int in_money;
-	in_money = inputInt("# ÀÔ±İ¾×À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+	in_money = inputInt("# ì…ê¸ˆì•¡ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 	*m = *m + in_money;
-	printf("* ÇöÀç ÀÜ¾×Àº %d¿ø ÀÔ´Ï´Ù.\n\n", *m);
+	printf("* í˜„ì¬ ì”ì•¡ì€ %dì› ì…ë‹ˆë‹¤.\n\n", *m);
 	return;
 }
 
 void withdraw(int* m)
 {
 	int out_money;
-	out_money = inputInt("# Ãâ±İ¾×À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+	out_money = inputInt("# ì¶œê¸ˆì•¡ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 
 	if (out_money > *m)
 	{
-		printf("* ÀÜ¾×ÀÌ ºÎÁ·ÇÕ´Ï´Ù.\n");
-		printf("* ÇöÀç ÀÜ¾×Àº %d¿ø ÀÔ´Ï´Ù.\n\n", *m);
+		printf("* ì”ì•¡ì´ ë¶€ì¡±í•©ë‹ˆë‹¤.\n");
+		printf("* í˜„ì¬ ì”ì•¡ì€ %dì› ì…ë‹ˆë‹¤.\n\n", *m);
 
 
 	}
@@ -122,7 +122,7 @@ void withdraw(int* m)
 	else
 	{
 		*m = *m - out_money;
-		printf("* ÇöÀç ÀÜ¾×Àº %d¿ø ÀÔ´Ï´Ù.\n\n", *m);
+		printf("* í˜„ì¬ ì”ì•¡ì€ %dì› ì…ë‹ˆë‹¤.\n\n", *m);
 
 	}
 
