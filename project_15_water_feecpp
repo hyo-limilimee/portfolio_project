@@ -12,24 +12,24 @@ int main()
 	double fee;
 	const char* str;
 
-	code = input("* »ç¿ëÀÚ ÄÚµå¸¦ ÀÔ·ÂÇÏ½Ã¿À(1:°¡Á¤¿ë/2:»ó¾÷¿ë/3:°ø¾÷¿ë) : ");
+	code = input("* ì‚¬ìš©ì ì½”ë“œë¥¼ ì…ë ¥í•˜ì‹œì˜¤(1:ê°€ì •ìš©/2:ìƒì—…ìš©/3:ê³µì—…ìš©) : ");
 	
-	amount = input("* »ç¿ë·®À» ÀÔ·ÂÇÏ½Ã¿À(ton´ÜÀ§) : ");
+	amount = input("* ì‚¬ìš©ëŸ‰ì„ ì…ë ¥í•˜ì‹œì˜¤(tonë‹¨ìœ„) : ");
 
 	
 	if (code == 1)
 	{
-		str = "°¡Á¤¿ë";
+		str = "ê°€ì •ìš©";
 	}
 
 	else if (code == 2)
 	{
-		str = "»ó¾÷¿ë";
+		str = "ìƒì—…ìš©";
 	}
 
 	else
 	{
-		str = "°ø¾÷¿ë";
+		str = "ê³µì—…ìš©";
 	}
 
 	fee = calc(code, amount);
@@ -85,9 +85,9 @@ void output(int code, int amount, double fee, const char* str)
 {
 
 
-	printf("\n# »ç¿ëÀÚÄÚµå : %d(%s)\n", code, str);
-	printf("# »ç¿ë·® : %d ton\n", amount);
-	printf("# ÃÑ¼öµµ¿ä±İ : %.0lf¿ø\n", fee);
+	printf("\n# ì‚¬ìš©ìì½”ë“œ : %d(%s)\n", code, str);
+	printf("# ì‚¬ìš©ëŸ‰ : %d ton\n", amount);
+	printf("# ì´ìˆ˜ë„ìš”ê¸ˆ : %.0lfì›\n", fee);
 
 	return;
 }
