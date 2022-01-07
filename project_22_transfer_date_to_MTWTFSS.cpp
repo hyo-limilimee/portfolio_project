@@ -54,7 +54,7 @@ int main()
 
 void input(int* year, int* month, int* day)
 {
-	printf("* ³â ¿ù ÀÏÀ» ÀÔ·ÂÇÏ½Ã¿À : ");
+	printf("* ë…„ ì›” ì¼ì„ ì…ë ¥í•˜ì‹œì˜¤ : ");
 	scanf("%d %d %d", year, month, day);
 
 	return;
@@ -82,7 +82,7 @@ int yearcheck(int year)
 		return 0;
 	}
 
-	//À±³âÀÌ¸é 1, Æò³âÀÌ¸é 0
+	//ìœ¤ë…„ì´ë©´ 1, í‰ë…„ì´ë©´ 0
 }
 
 int daycheck(int year, int month, int day, int yeartype)
@@ -173,16 +173,16 @@ int totalday(int year, int month, int day)
 
 void output(int year, int month, int day, int totalday)
 {
-	printf("%d³â %d¿ù %dÀÏÀº ", year, month, day);
+	printf("%dë…„ %dì›” %dì¼ì€ ", year, month, day);
 	switch (totalday % 7)
 	{
-	case 0: printf("ÀÏ¿äÀÏÀÔ´Ï´Ù.\n\n"); break;
-	case 1: printf("¿ù¿äÀÏÀÔ´Ï´Ù.\n\n"); break;
-	case 2: printf("È­¿äÀÏÀÔ´Ï´Ù.\n\n"); break;
-	case 3: printf("¼ö¿äÀÏÀÔ´Ï´Ù.\n\n"); break;
-	case 4: printf("¸ñ¿äÀÏÀÔ´Ï´Ù.\n\n"); break;
-	case 5: printf("±İ¿äÀÏÀÔ´Ï´Ù.\n\n"); break;
-	case 6: printf("Åä¿äÀÏÀÔ´Ï´Ù.\n\n"); break;
+	case 0: printf("ì¼ìš”ì¼ì…ë‹ˆë‹¤.\n\n"); break;
+	case 1: printf("ì›”ìš”ì¼ì…ë‹ˆë‹¤.\n\n"); break;
+	case 2: printf("í™”ìš”ì¼ì…ë‹ˆë‹¤.\n\n"); break;
+	case 3: printf("ìˆ˜ìš”ì¼ì…ë‹ˆë‹¤.\n\n"); break;
+	case 4: printf("ëª©ìš”ì¼ì…ë‹ˆë‹¤.\n\n"); break;
+	case 5: printf("ê¸ˆìš”ì¼ì…ë‹ˆë‹¤.\n\n"); break;
+	case 6: printf("í† ìš”ì¼ì…ë‹ˆë‹¤.\n\n"); break;
 	}
 
 	return;
