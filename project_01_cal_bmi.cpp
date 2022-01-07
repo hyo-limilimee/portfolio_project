@@ -1,4 +1,4 @@
-// calculate bmi
+// 몸무게와 키를 입력 받아서 신체질량지수(BMI)를 구한 후 비만도를 출력해주는 프로그램을 작성하시오.
 
 #include<stdio.h>
 #pragma warning (disable:4996)
