@@ -31,12 +31,12 @@ int main()
 			fan_Last = reverseFan(fan);
 			break;
 		case 4:
-			printf("\n ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.\n");
+			printf("\n í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.\n");
 
 			return 0;
 
 		default:
-			printf("\n ÀÌ»óÇÕ´Ï´Ù.\n");
+			printf("\n ì´ìƒí•©ë‹ˆë‹¤.\n");
 			return 0;
 		}
 
@@ -56,7 +56,7 @@ int menu()
 
 	while (1)
 	{
-		printf("1. È¯Ç³±¸ ¿­±â / 2. È¯Ç³±¸ ´İ±â / 3.È¯Ç³±¸ ÀüÃ¼ ÀüÈ¯ / 4. Á¾·á : ");
+		printf("1. í™˜í’êµ¬ ì—´ê¸° / 2. í™˜í’êµ¬ ë‹«ê¸° / 3.í™˜í’êµ¬ ì „ì²´ ì „í™˜ / 4. ì¢…ë£Œ : ");
 		scanf("%d", &menu_num);
 
 		if (menu_num > 0 && menu_num < 5)
@@ -96,7 +96,7 @@ int inputInt(const char* string)
 			myflush();
 		}
 
-		printf("* Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇÏ½Ê½Ã¿À : ");
+		printf("* ì˜ëª» ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•˜ì‹­ì‹œì˜¤ : ");
 
 	}
 	return a;
@@ -105,7 +105,7 @@ int inputInt(const char* string)
 
 unsigned char openFan(unsigned char fan)
 {
-	const char* a = "Fan ¿­±â ½ÇÇà È­¸é";
+	const char* a = "Fan ì—´ê¸° ì‹¤í–‰ í™”ë©´";
 	int Fan_num;
 	int FAN_01, FAN_02, FAN_03, FAN_04, FAN_05, FAN_06, FAN_07, FAN_08;
 	unsigned char k = 1;
@@ -115,7 +115,7 @@ unsigned char openFan(unsigned char fan)
 	printf("%35s\n", a);
 	printf("-----------------------------------------------------------\n");
 
-	Fan_num = inputInt("* OPENÇÒ FAN ¹øÈ£¸¦ ÀÔ·ÂÇÏ½Ã¿À(1-8) : ");
+	Fan_num = inputInt("* OPENí•  FAN ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì‹œì˜¤(1-8) : ");
 
 	fan = fan | k << (Fan_num - 1);
 
@@ -129,7 +129,7 @@ unsigned char openFan(unsigned char fan)
 
 unsigned char offFan(unsigned char fan)
 {
-	const char* a = "Fan ´İ±â ½ÇÇà È­¸é";
+	const char* a = "Fan ë‹«ê¸° ì‹¤í–‰ í™”ë©´";
 	int Fan_num, xxx;
 	int FAN_01, FAN_02, FAN_03, FAN_04, FAN_05, FAN_06, FAN_07, FAN_08;
 	unsigned char k = 0;
@@ -141,7 +141,7 @@ unsigned char offFan(unsigned char fan)
 	printf("%35s\n", a);
 	printf("-----------------------------------------------------------\n");
 
-	Fan_num = inputInt("* CLOSEÇÒ FAN ¹øÈ£¸¦ ÀÔ·ÂÇÏ½Ã¿À(1-8) : ");
+	Fan_num = inputInt("* CLOSEí•  FAN ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì‹œì˜¤(1-8) : ");
 
 		switch (Fan_num)
 		{
@@ -187,7 +187,7 @@ unsigned char offFan(unsigned char fan)
 
 unsigned char reverseFan(unsigned char fan)
 {
-	const char* a = "Fan ÀüÃ¼ ÀüÈ¯ ½ÇÇà È­¸é";
+	const char* a = "Fan ì „ì²´ ì „í™˜ ì‹¤í–‰ í™”ë©´";
 	int Fan_num, i;
 	int FAN_01, FAN_02, FAN_03, FAN_04, FAN_05, FAN_06, FAN_07, FAN_08;
 	unsigned char k = 1;
@@ -196,7 +196,7 @@ unsigned char reverseFan(unsigned char fan)
 	printf("%35s\n", a);
 	printf("-----------------------------------------------------------\n");
 
-	printf("* ÀüÃ¼ FANÀÇ »óÅÂ°¡ ÀüÈ¯µÇ¾ú½À´Ï´Ù.(ON, OFF »óÅÂ µÚ¹Ù²ñ)\n");
+	printf("* ì „ì²´ FANì˜ ìƒíƒœê°€ ì „í™˜ë˜ì—ˆìŠµë‹ˆë‹¤.(ON, OFF ìƒíƒœ ë’¤ë°”ë€œ)\n");
 
 
 	for (i = 0; i < 9; i++)
@@ -216,7 +216,7 @@ void displayFan(unsigned char fan)
 {
 	unsigned char k = 1;
 	printf("-----------------------------------------------------------\n");
-	printf("8¹øFAN 7¹øFAN 6¹øFAN 5¹øFAN 4¹øFAN 3¹øFAN 2¹øFAN 1¹øFAN\n");
+	printf("8ë²ˆFAN 7ë²ˆFAN 6ë²ˆFAN 5ë²ˆFAN 4ë²ˆFAN 3ë²ˆFAN 2ë²ˆFAN 1ë²ˆFAN\n");
 
 	for (int i = 0; i < 8; i++)
 	{
